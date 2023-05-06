@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/Style.css">
+    <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
+    <title>Générateur de carte postale</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="right">
+            <div id="titlea" class="titreapercu"></div>
+            <div class="imagechoisie" id="img"></div>
+            <div class="texteinput" id="textarea"></div>
+        </div>
+        <div class="center">
+            <div class="option">
+                <label for="titlen" class="titre">Veuillez saisir un titre : </label>
+                <input type="text" name="titlen" class="titles" id="title" placeholder="Ceci est mon titre">
+            </div>
+            <div class="option">
+                <div class="titre">Veuillez saisir une image :</div>
+                <div class="image">
+                    <div class="imgbut">
+                        <img src="assets/img/montagne.webp" alt="Montagne" class="img" id="">
+                        <button>Choisir</button>
+                    </div>
+                    <div class="imgbut">
+                        <img src="assets/img/Mer.jpg" alt="Mer" class="img">
+                        <button>Choisir</button>
+                    </div>
+                    <div class="imgbut">
+                        <img src="assets/img/Campagne.jpg" alt="Campagne" class="img">
+                        <button>Choisir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="option"></div>
+        </div>
+        <div class="left">
+            <div class="option">
+                <p class="titre">Choisir une police :</p>
+                <p class="police1"><input type="radio" name="police" id="p1"> Apercu</p>
+                <p class="police2"><input type="radio" name="police" id="p2"> Apercu</p>
+                <p class="police3"><input type="radio" name="police" id="p3"> Apercu</p>
+            </div>
+            <div class="option">
+                <p class="titre">Choisir le style</p>
+                <select name="style" id="style" class="styles">
+                    <option value="default">Selectionner</option>
+                    <option value="italic" id="italic">Italic</option>
+                    <option value="bold" id="bold">Gras</option>
+                    <option value="underline" id="underline">Souligner</option>
+                </select>
+            </div>
+            <div class="option"></div>
+            <div class="option"></div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/Script.js"></script>
+</body>
+
+</html>

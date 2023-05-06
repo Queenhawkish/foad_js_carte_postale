@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+}
+
+.page {
+    display: flex;
+}
+
+
+.right{
+    display: flex;
+    background-color: rgba(100, 148, 237, 0.073);
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+    justify-content: center
+}
+
+.titreapercu{
+    margin-top: 2em;
+    font-size: 2em;
+}
+
+.image{
+    display: flex;
+}
+
+.texte{
+    display: flex;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 25%;
+    background-color: rgba(255, 127, 80, 0.073);
+    border: 1px solid black;
+}
+
+.option{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 1em;
+    padding: 1em;
+}
+
+.titles{
+    display: flex;
+    width: 15em;
+    height: 2em;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.image{
+    display: inline-flex;
+}
+
+.img{
+    width: 3em;
+    height: 1.5em;
+    margin: 10px;
+}
+
+.img:hover{
+    -ms-transform: scale(10); /* IE 9 */
+    -webkit-transform: scale(10); /* Safari 3-8 */
+    transform: scale(10);
+}
+
+.imgbut{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+button{
+    width: 3.5em;
+    padding-left: 0;
+    margin: auto;
+}
+
+.left{
+    display: flex;
+    background-color: rgba(0, 100, 0, 0.073);
+    width: 25%;
+    text-align: center;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.titre{
+    text-decoration: underline;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+}
+
+.police1{
+    font-family: 'Freehand', cursive;
+    font-size: 1.5em;
+    text-align: start;
+}
+
+.police2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    text-align: start;
+    font-style: italic;
+}
+
+.police3{
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5em;
+    margin-top: 0.3em;
+    text-align: start;
+}
+
