@@ -20,7 +20,16 @@
     width: 50%;
     text-align: center;
     border: 1px solid black;
-    justify-content: center
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagechoisie{
+    background-image: url(../../assets/img/Campagne.jpg);
+    width: 35em;
+    height: 20em;
+    background-size: cover;
+    margin: auto;
 }
 
 .titreapercu{
