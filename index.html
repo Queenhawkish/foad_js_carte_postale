@@ -40,14 +40,17 @@
                     </div>
                 </div>
             </div>
-            <div class="option"></div>
+            <div class="option">
+                <p class="titre">Saisir un texte : </p>
+                <textarea name="textecarte" id="txt" cols="30" rows="10"></textarea>
+            </div>
         </div>
         <div class="left">
             <div class="option">
                 <p class="titre">Choisir une police :</p>
-                <p class="police1"><input type="radio" name="police" id="p1"> Apercu</p>
-                <p class="police2"><input type="radio" name="police" id="p2"> Apercu</p>
-                <p class="police3"><input type="radio" name="police" id="p3"> Apercu</p>
+                <p class="police1"><input type="radio" name="font" id="Freehand" checked> Apercu</p>
+                <p class="police2"><input type="radio" name="font" id="Dancing Script"> Apercu</p>
+                <p class="police3"><input type="radio" name="font" id="Satisfy"> Apercu</p>
             </div>
             <div class="option">
                 <p class="titre">Choisir le style</p>
@@ -58,8 +61,17 @@
                     <option value="underline">Souligner</option>
                 </select>
             </div>
-            <div class="option"></div>
-            <div class="option"></div>
+            <div class="option">
+                <p class="titre">Choisir une couleur pour le titre :</p>
+                <input type="color" name="titrecolor" id="color" class="color">
+                <p class="titre texte">Choisir une couleur de fond pour le titre :</p>
+                <input type="color" name="backgroundcolor" id="bgcolor" class="color">
+                <p class="titre texte">Choisir une couleur pour le texte</p>
+                <input type="color" name="textecolor" id="colort" class="color">
+            </div>
+            <div class="option">
+                <button id="print">Imprimer</button>
+            </div>
         </div>
     </div>
 

@@ -4,27 +4,61 @@ var titre = document.getElementById("titlea")
 
 title.addEventListener("input", function () {
     let input = document.getElementById("title").value
-
     titre.innerText = input
 })
 
-let p1 = document.getElementById("p1")
+var texte = document.getElementById("txt")
 
-p1.addEventListener("change", function () {
-    titre.style.fontFamily = "'Freehand', cursive";
+let txt = document.getElementById("textarea")
+
+texte.addEventListener("input" , function (){
+    let input = texte.value
+    txt.innerText = input
 })
 
-let p2 = document.getElementById("p2")
+let color_texte = document.getElementById("colort")
 
-p2.addEventListener("change", function () {
-    titre.style.fontFamily = "'Dancing Script', cursive";
+function changecolortexte (){
+    let input = color_texte.value
+    txt.style.color = input
+}
+
+color_texte.addEventListener("input", changecolortexte)
+
+let bgcolor = document.getElementById("bgcolor")
+
+function changebgcolor () {
+    let input = bgcolor.value
+    titre.style.backgroundColor = input
+}
+
+bgcolor.addEventListener("input" , changebgcolor)
+
+let font = document.getElementsByName("font")
+
+font.forEach(element => {
+    element.addEventListener("change", function () {
+        titre.style.fontFamily = element.id
+    })
 })
 
-let p3 = document.getElementById("p3")
+// let p1 = document.getElementById("p1")
 
-p3.addEventListener("change", function () {
-    titre.style.fontFamily = "'Satisfy', cursive";
-})
+// p1.addEventListener("change", function () {
+//     titre.style.fontFamily = "'Freehand', cursive";
+// })
+
+// let p2 = document.getElementById("p2")
+
+// p2.addEventListener("change", function () {
+//     titre.style.fontFamily = "'Dancing Script', cursive";
+// })
+
+// let p3 = document.getElementById("p3")
+
+// p3.addEventListener("change", function () {
+//     titre.style.fontFamily = "'Satisfy', cursive";
+// })
 
 var style = document.getElementById("style")
 
@@ -55,6 +89,8 @@ function changestyle() {
 
 style.addEventListener("change", changestyle)
 
+
+
 let image
 
 let img
@@ -74,7 +110,7 @@ let img3 = document.getElementById("but3")
 // let image3 = document.getElementById("image3")
 
 window.onload = function () {
-    image = ["../../assets/img/montagne.webp", "../../assets/img/Mer.jpg", "../../assets/img/Campagne.jpg"];
+    image = ["assets/img/montagne.webp", "assets/img/Mer.jpg", "assets/img/Campagne.jpg"];
     img = image[0];
 }
 
@@ -116,3 +152,16 @@ img3.addEventListener("click", function () {
 // img3.addEventListener("click" , function() {
 //     selectimage(2)
 // })
+
+let color = document.getElementById("color")
+
+function changecolor() {
+    titre.style.color = color.value;
+}
+color.addEventListener("input", changecolor)
+
+let print = document.getElementById("print")
+
+print.addEventListener("click" , function(){
+    window.print()
+})
