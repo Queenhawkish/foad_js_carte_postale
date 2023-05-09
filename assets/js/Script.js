@@ -73,27 +73,27 @@ let img3 = document.getElementById("but3")
 
 // let image3 = document.getElementById("image3")
 
-// window.onload = function () {
-//     image = ["../../assets/img/montagne.webp", "../../assets/img/Mer.jpg", "../../assets/img/Campagne.jpg"];
-//     img = image[0];
-// }
+window.onload = function () {
+    image = ["../../assets/img/montagne.webp", "../../assets/img/Mer.jpg", "../../assets/img/Campagne.jpg"];
+    img = image[0];
+}
 
-// function selectimage(number) {
-//     imgpick.innerText = "url(" + image[Number] + ") ";
-//     img = image[Number];
-// }
+function selectimage(number) {
+    imgpick.style.backgroundImage = "url(" + image[number] + ") ";
+    img = image[number];
+}
 
-// img1.addEventListener("onclick", function () {
-//     selectimage(0)
-// })
+img1.addEventListener("click", function () {
+    selectimage(0)
+})
 
-// img2.addEventListener("onclick", function () {
-//     selectimage(1)
-// })
+img2.addEventListener("click", function () {
+    selectimage(1)
+})
 
-// img3.addEventListener("onclick", function () {
-//     selectimage(2)
-// })
+img3.addEventListener("click", function () {
+    selectimage(2)
+})
 
 // window.onload = function () {
 //     image = [image1 , image2 , image3]
